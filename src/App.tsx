@@ -1,4 +1,4 @@
-import { Authenticated, Refine, WelcomePage } from "@refinedev/core";
+import { Authenticated, Refine } from "@refinedev/core";
 import { DevtoolsPanel, DevtoolsProvider } from "@refinedev/devtools";
 import { RefineKbar, RefineKbarProvider } from "@refinedev/kbar";
 
@@ -20,21 +20,6 @@ import { useEffect } from "react";
 import { gapi } from "gapi-script";
 
 function App() {
-  // useEffect(() => {
-  //   function start() {
-  //     gapi.client.init({
-  //       clientId: import.meta.env.VITE_GOOGLE_CLIENT_ID,
-  //       scope: "",
-  //     });
-  //   }
-  //   gapi.load("client:auth2", start);
-  // }, []);
-
-  // console.log(
-  //   "import.meta.env.VITE_GOOGLE_CLIENT_ID",
-  //   import.meta.env.VITE_GOOGLE_CLIENT_ID
-  // );
-
   return (
     <BrowserRouter>
       {/* <GitHubBanner /> */}
